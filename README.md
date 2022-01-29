@@ -1,9 +1,9 @@
 # CS516-Awesome-Group
 
 Group Member:
-Xiaoxi Lyu
-Chihui Shao
-Quan Wang
+Xiaoxi Lyu,
+Chihui Shao,
+Quan Wang,
 Kaichao Chang
 
 Name of our team: Awesome Group :)
