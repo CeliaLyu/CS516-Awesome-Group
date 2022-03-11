@@ -1,14 +1,12 @@
-from flask import render_template, redirect, url_for, flash, request
-from werkzeug.urls import url_parse
-from flask_login import login_user, logout_user, current_user
+from flask import Blueprint, flash, redirect, render_template, request, url_for
+from flask_login import current_user, login_user, logout_user
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from werkzeug.urls import url_parse
+from wtforms import BooleanField, PasswordField, StringField, SubmitField
+from wtforms.validators import DataRequired, Email, EqualTo, ValidationError
 
 from .models.user import User
 
-
-from flask import Blueprint
 bp = Blueprint('users', __name__)
 
 

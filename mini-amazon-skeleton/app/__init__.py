@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_login import LoginManager
+
 from .config import Config
 from .db import DB
-
 
 login = LoginManager()
 login.login_view = 'users.login'
@@ -20,5 +20,8 @@ def create_app():
 
     from .users import bp as user_bp
     app.register_blueprint(user_bp)
+
+    from .social import social_bp
+    app.register_blueprint(social_bp)
 
     return app
